@@ -1,20 +1,3 @@
-/*
-[X] Alterar a fonte do projeto para 'Nunito'
-[X] Tirar o fieldset e manter o layout sem alterações visuais
-[X] Retirar todas as tags <br> e manter o layout sem alterações visuais
-[X] Alterar o background do formulário
-[X] Alterar as cores da borda de todos os inputs
-[X] Alterar a cor e tamanho dos textos dos labels
-
----- Hover nos buttons
-
-[X] Trocar a cor de fundo
-[X] Aumentar o botão (width, height)
-[X] Trocar a cor da letra
-[X] Trocar a cor da borda
-[X] O cursor terá que ser pointer 
-*/
-
 * {
     margin: 0;
     padding: 0;
