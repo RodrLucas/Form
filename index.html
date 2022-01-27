@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,800;1,500&family=Nunito:ital,wght@0,200;0,300;0,500;0,700;1,200;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio Formulários</title>
+</head>
+
+<body>
+    <!--No camo IDADE, mínimo de 12 anos
+        Data de Nascimento -> Date
+        Sexo -> Clico em um, some no outro
+        Foto de perfil -> Apenas arquivos de imagens
+        Link do perfil -> Apenas URL
+        Senha -> Aceitar de 6 a 8 caractéres
+
+        TODOS OS CAMPOS SÃO OBRIGATÓRIOS
+    -->
+    <div class="container">
+        <form action="" method="POST" enctype="multipart/form-data">
+            <label for="nome">Nome</label>
+            <input type="text" name="Nome" id="nome" required>
+        
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="email" required>
+        
+            <label for="idade">Idade</label>
+            <input type="number" name="idade" id="idade" min="12" required step="1">
+            <label for="date">Data de Nascimento</label>
+            <input type="date" name="date" id="date" required>
+            <label class="label-account" for="account"> Onde você possui conta:</label>
+                <label class="inputsLabelsAccount" for="account">
+                    <input class="inputsLabelsAccount" type="checkbox" name="instagram" form="account">
+                    Instagram
+                </label>
+                <label class="inputsLabelsAccount" form="account">
+                    <input class="inputsLabelsAccount" type="checkbox" name="facebook" form="account">
+                    Facebook
+                </label>
+                <label class="inputsLabelsAccount" form="account">
+                    <input class="inputsLabelsAccount" type="checkbox" name="youtube" form="account">
+                    Youtube
+                </label>
+            <label for="sexo"> Sexo </label>
+                <label for="sexo" class="input-sexo">
+                    <input for="sexo" class="input-sexo" type="radio" name="sexo" value="masculino">
+                    Masculino
+                </label>
+                <label for="sexo" class="input-sexo">
+                    <input for="sexo" class="input-sexo" type="radio" name="sexo" value="feminino">
+                    Feminino
+                </label>
+            <label>
+                Cor dos olhos
+                <input type="color" name="corOlhos" required>
+            </label>
+            <label>
+                Biografia
+                <textarea name="bio" cols="30" rows="10" required></textarea>
+            </label>
+            <label>
+                Foto do Perfil
+                <input type="file" name="fotoPerfil" accept="image/*" required>
+            </label>
+            <label>
+                Telefone
+                <input type="tel" name="phone" required>
+            </label>
+            <label>
+                Link do Perfil do Facebook
+                <input type="url" name="linkPerfil" required>
+            </label>
+            <label>
+                Senha
+                <input type="password" name="senha" minlength="6" maxlength="8" required>
+            </label>
+            <button type="reset" name="reset">Limpar</button>
+            <button type="submit" name="submit">Enviar Dados</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

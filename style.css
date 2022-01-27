@@ -1,0 +1,63 @@
+/*
+[X] Alterar a fonte do projeto para 'Nunito'
+[X] Tirar o fieldset e manter o layout sem alterações visuais
+[X] Retirar todas as tags <br> e manter o layout sem alterações visuais
+[X] Alterar o background do formulário
+[X] Alterar as cores da borda de todos os inputs
+[X] Alterar a cor e tamanho dos textos dos labels
+
+---- Hover nos buttons
+
+[X] Trocar a cor de fundo
+[X] Aumentar o botão (width, height)
+[X] Trocar a cor da letra
+[X] Trocar a cor da borda
+[X] O cursor terá que ser pointer 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    margin: 50px auto;
+    width: 400px;
+}
+
+form {
+    border: 1px solid #495170;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #9CAEF0;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    color: #2342A3;
+    margin-top: 5px;
+}
+
+input, textarea {
+    display: block;
+    margin: 0 0 20px 0;
+    border-color: #495170;
+}
+
+.input-sexo, .inputsLabelsAccount {
+    display: inline;
+    font-size: 15px;
+    margin: 0 2px 15px 2px;
+}
+
+button:hover {
+    background-color: #495170;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    width: 95px;
+    height: 20px;
+    cursor: pointer;
+}
